@@ -1,0 +1,11 @@
+#!/bin/bash
+set -euo pipefail
+
+echo "Doing a shallow clone..."
+
+git init
+git remote add origin BUILDKITE_REPO
+git fetch --depth=1 origin $BUILDKITE_COMMIT
+git checkout FETCH_HEAD
+
+echo "Shallow clone done!"

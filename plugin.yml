@@ -1,0 +1,7 @@
+name: Minimal Clone
+description: Clone only the exact commit you need
+author: https://github.com/arilotter
+requirements: []
+configuration:
+  properties: {}
+  additionalProperties: false
